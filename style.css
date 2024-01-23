@@ -1,12 +1,14 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
 body, html{
  width: 100vw;
  height: 100vh;
+ overflow-x: hidden;
 }
 
 header{
@@ -24,31 +26,41 @@ header > img{
     margin: 10px;
 }
 
-main > a {
-    text-decoration: none;
-    color: #00A2E8;
-    margin: 10px;
-    font-size: 15px;
-    background-color: rgba(0, 0, 0, 0.849);
-    padding: 20px;
+.links-buttons{
+    text-align: center;
+    
 }
 
-main > a:hover{
-   background-color: grey;
+.links-buttons > a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    font-size: 15px;
+    background-color: #00A2E8;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.links-buttons > a:hover{
+   background-color: #014562;
+   color: #00A2E8;
 }
 
 
 
 .slider{
     margin: 0 auto;
-    width: 1000px; /*600 */
+    width: 900px; /*600 */
     height: 400px; /*400 */
     overflow: hidden;
     margin-top: 60px;
+    box-shadow: 1px 2px 10px 3px rgba(0, 0, 0, 0.607);
 
 }
 
 .slides{
+    position: relative;
     width: 400%; 
     height: 400px;
     display: flex;
@@ -60,23 +72,24 @@ main > a:hover{
 
 .slide{
  width: 25%;
- position: relative;
+ position: relative; 
  transition: 2s;
 }
   
 .slide img{
-    width: 1000px; /*800 */
+    width: 900px; /*800 */
     height: 400px;
 }
 
 .manual-navegation{
-    position: absolute;
-    width: 1000px; /*600 */
-    margin-top: -40px; /*-40 */
+    position: fixed; 
+    width: 900px; 
+    margin-top: -40px; 
     display: flex; 
     justify-content: center;
     
 }
+
 
 .manual-btn{
     border: 2px solid white;
@@ -112,7 +125,7 @@ main > a:hover{
 
 #radio5:checked ~ .first{
     margin-left: -100%; 
-}
+} 
 
 .navegation-auto div{
     border: 2px solid black;
@@ -123,8 +136,8 @@ main > a:hover{
 }
 
 .navegation-auto{
-position: absolute;
-width: 1000px; /*600 */
+position: fixed; /*absolete */
+width: 900px; /*600 */
 margin-top: 360px;
 display: flex;
 justify-content: center;
@@ -152,5 +165,312 @@ justify-content: center;
 
 #radio5:checked ~ .navegation-auto .auto-btn5{
     background-color: white;
+}
+
+.paises{
+    text-align: center;
+    margin: 50px;
+}
+
+.imagens{
+    text-align: center;
+    border: black;
+}
+
+
+#brasil{
+   background-image: url('imagens/brasil.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   border: none;
+   cursor: pointer;
+   transition: 0.3s;
+   margin: 0px 0px 80px 80px;
+}
+
+#brasil:hover{
+    transform: scale(1.2);
+    }
+    
+    #brasil:active{
+        transform: scale(0.9);
+    }
+
+#canada{
+    background-image: url('imagens/canada.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0px 0px 80px 80px;
+ }
+
+ #canada:hover{
+    transform: scale(1.2);
+    }
+    
+    #canada:active{
+        transform: scale(0.9);
+    }
+
+ #usa{
+    background-image: url('imagens/USA.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0px 0px 80px 80px;
+ }
+
+ #usa:hover{
+    transform: scale(1.2);
+    }
+    
+    #usa:active{
+        transform: scale(0.9);
+    }
+
+ #ucrania{
+    background-image: url('imagens/ucrania.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0px 0px 80px 80px;
+ }
+
+ #ucrania:hover{
+    transform: scale(1.2);
+    }
+    
+    #ucrania:active{
+        transform: scale(0.9);
+    }
+
+ #equador{
+    background-image: url('imagens/equador.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0px 0px 80px 80px;
+ }
+
+#equador:hover{
+transform: scale(1.2);
+}
+
+#equador:active{
+    transform: scale(0.9);
+}
+
+
+#mexico{
+    background-image: url('imagens/mexico.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0px 0px 80px 80px;
+ }
+
+#mexico:hover{
+transform: scale(1.2);
+}
+
+#mexico:active{
+    transform: scale(0.9);
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#migração{
+    color: white;
+    background-color: #00A2E8;
+    height: 530px;
+    width: 300px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+#migração2{
+    color: white;
+    background-color: #bf4445;
+    height: 530px;
+    width: 300px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+
+.formulario > h3 {
+  background-color: black;
+  padding: 8px;
+  text-align: center;
+}
+
+.formulario > p{
+    margin: 10px;
+}
+
+.formulario > a{
+    height: 35px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #efc953;
+    transition: 0.3s;
+}
+
+.formulario>a:hover{
+    
+    transform: scale(1.05);
+    background-color: #014562;
+}
+.formulario>a:active{
+    transform: scale(0.9);
+}
+
+
+.formulario2 > h3 {
+    background-color: black;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .formulario2 > p{
+      margin: 10px;
+  }
+
+.formulario2 > a{
+    height: 35px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #ecece7;
+    color: #bf4445;
+    transition: 0.3s;
+}
+
+.formulario2>a:hover{
+    color: white;
+    transform: scale(1.05);
+    background-color: rgb(134, 134, 134);
+}
+.formulario2>a:active{
+    transform: scale(0.9);
+}
+
+
+section#migração2>div#pessoa1{
+    display: block;
+    background: url(imagens/pessoa5.jpg) no-repeat;
+    height: 250px;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 10px 10px 0px 0px; 
+}
+
+
+section#migração2>div#pessoa2{
+    display: block;
+    background: url(imagens/pessoa2.jpg) no-repeat;
+    height: 250px;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 10px 10px 0px 0px; 
+}
+
+section#migração2>div#pessoa3{
+    display: block;
+    background: url(imagens/pessoa6.jpg) no-repeat;
+    height: 250px;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 10px 10px 0px 0px; 
+}
+
+section#migração>div#estudante{
+    display: block;
+    background: url(imagens/estudar.jpg) no-repeat;
+    height: 250px;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 10px 10px 0px 0px;
+}
+section#migração>div#trabalho{
+    display: block;
+    background: url(imagens/trabalho.jpg) no-repeat;
+    height: 250px;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 10px 10px 0px 0px;
+}
+section#migração>div#familia{
+    display: block;
+    background: url(imagens/familia.jpg) no-repeat;
+    height: 250px;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 10px 10px 0px 0px;
+}
+section#migração>div#renda{
+    display: block;
+    background: url(imagens/planejamento.jpg) no-repeat;
+    height: 250px;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+.footer{
+    color: white;
+    background-color: black;
 }
 
