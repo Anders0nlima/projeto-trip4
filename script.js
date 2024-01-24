@@ -14,3 +14,8 @@ function nextImage(){
 setInterval(function(){
     nextImage()
 }, 5000)
+
+
+document.getElementById('brasil').addEventListener("click", function(){
+    window.location.href = "brasil.html";
+})
