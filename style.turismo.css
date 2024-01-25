@@ -1,0 +1,279 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 5px 15px 8px rgba(0, 0, 0, 0.438)
+}
+
+.banner video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 65%;
+}
+
+.banner .content{
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+    padding-top: 200px;
+    /* margin: 0 auto; */
+    /* text-align: center; */
+}
+
+.banner .content h1{
+    text-shadow: 2px 4px 10px black;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 5em;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+.banner .content p{
+    margin-left: 50px;
+    text-shadow: 2px 4px 10px black;
+    font-size: 1.5em;
+    color: #ffff;
+}
+
+div.regiões{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+div.regiões>div.amazonia{
+    background-color: white;
+    height: 350px;
+    width: 300px;
+    border: solid black 3px;
+    
+}
+
+div.regiões>div.amazonia>div.imagem-norte{
+    display: block;
+    background: url(imagens/amazonia.jpg) no-repeat;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+div.regiões>div.amazonia>div.conteudo h2{
+    text-align: center;
+}
+
+div.regiões>div.amazonia>div.conteudo p{
+ margin: 5px;
+}
+
+
+div.regiões>div.amazonia>div.botao button{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    margin-left: 65px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+div.regiões>div.amazonia>div.botao button:hover{
+    background-color: rgb(82, 82, 82);
+    border: 1px solid rgb(82, 82, 82);
+    transform: scale(1.1);
+}
+
+div.regiões>div.amazonia>div.botao button:active{
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+
+div.regiões>div.sertao{
+    background-color: white;
+    height: 350px;
+    width: 300px;
+    border: solid black 3px;
+    
+}
+
+div.regiões>div.sertao>div.imagem-norte{
+    display: block;
+    background: url(imagens/sertao.jpg) no-repeat;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+div.regiões>div.sertao>div.conteudo h2{
+    text-align: center;
+}
+
+div.regiões>div.sertao>div.conteudo p{
+ margin: 5px;
+}
+
+
+div.regiões>div.sertao>div.botao button{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    margin-left: 65px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+div.regiões>div.sertao>div.botao button:hover{
+    background-color: rgb(82, 82, 82);
+    border: 1px solid rgb(82, 82, 82);
+    transform: scale(1.1);
+}
+
+div.regiões>div.sertao>div.botao button:active{
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+div.regiões>div.cidade{
+    background-color: white;
+    height: 350px;
+    width: 300px;
+    border: solid black 3px;
+    
+}
+
+div.regiões>div.cidade>div.imagem-norte{
+    display: block;
+    background: url(imagens/cidade.jpg) no-repeat;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+div.regiões>div.cidade>div.conteudo h2{
+    text-align: center;
+}
+
+div.regiões>div.cidade>div.conteudo p{
+ margin: 5px;
+}
+
+
+div.regiões>div.cidade>div.botao button{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    margin-left: 65px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+div.regiões>div.cidade>div.botao button:hover{
+    background-color: rgb(82, 82, 82);
+    border: 1px solid rgb(82, 82, 82);
+    transform: scale(1.1);
+}
+
+div.regiões>div.cidade>div.botao button:active{
+    transform: scale(0.9);
+}
+
+
+
+
+
+div.regiões>div.praias{
+    background-color: white;
+    height: 350px;
+    width: 300px;
+    border: solid black 3px;
+    
+}
+
+div.regiões>div.praias>div.imagem-norte{
+    display: block;
+    background: url(imagens/praia.jpg) no-repeat;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+div.regiões>div.praias>div.conteudo h2{
+    text-align: center;
+}
+
+div.regiões>div.praias>div.conteudo p{
+ margin: 5px;
+}
+
+
+div.regiões>div.praias>div.botao button{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    margin-left: 65px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+div.regiões>div.praias>div.botao button:hover{
+    background-color: rgb(82, 82, 82);
+    border: 1px solid rgb(82, 82, 82);
+    transform: scale(1.1);
+}
+
+div.regiões>div.praias>div.botao button:active{
+    transform: scale(0.9);
+}
